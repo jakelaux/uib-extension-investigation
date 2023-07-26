@@ -1,4 +1,4 @@
-describe('x-853443-component-template Test', () => {
+describe('x-71146-extension-investigation Test', () => {
 	it('should be true', () => {
 		expect(true).toBe(true);
 	});

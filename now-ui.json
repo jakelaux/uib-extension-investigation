@@ -1,6 +1,6 @@
 {
     "components": {
-        "x-853443-component-template": {
+        "x-71146-extension-investigation": {
             "innerComponents": [],
             "uiBuilder": {
                 "associatedTypes": [
@@ -25,5 +25,5 @@
             ]
         }
     },
-    "scopeName": "x_853443_component"
+    "scopeName": "x_71146_extension"
 }

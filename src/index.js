@@ -1,1 +1,1 @@
-import './x-853443-component-template';
+import './x-71146-extension-investigation';

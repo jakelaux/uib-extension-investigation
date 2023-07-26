@@ -1,12 +1,12 @@
 {
-	"name": "component-template",
+	"name": "extension-investigation",
 	"version": "0.0.1",
 	"private": false,
-	"description": "component-template",
+	"description": "extension-investigation",
 	"keywords": [
 		"ServiceNow",
 		"Now Experience UI Component",
-		"component-template"
+		"extension-investigation"
 	],
 	"readme": "./README.md",
 	"engines": {

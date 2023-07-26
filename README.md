@@ -3,7 +3,7 @@ Component Template
 
 ## Intro
 The purpose of this component is to provide a template to start from on your custom component projects 
-**The component-template is a simplified/baseline of the** [REST-API-EXPLORER](https://github.com/esolutionsone/REST-API-Explorer-Example) **example component. We created this component to illustrate how a more complex component could be structured and to show how REST messages could be used to fetch records from and create records in your instance.**
+**The extension-investigation is a simplified/baseline of the** [REST-API-EXPLORER](https://github.com/esolutionsone/REST-API-Explorer-Example) **example component. We created this component to illustrate how a more complex component could be structured and to show how REST messages could be used to fetch records from and create records in your instance.**
 It contains a few boiler plate REST examples, a loading spinner, and a file scrubber so you can rename the component, & update the component with your organizational app code.
  
 ---
@@ -27,9 +27,9 @@ It contains a few boiler plate REST examples, a loading spinner, and a file scru
 1) Ensure your sn-cli is configured/installed correctly 
     &rarr; You can review our [Mac OS](https://creator-dna.com/blog/macos-setup) & [Windows OS](https://creator-dna.com/blog/1hj866nlrwslzlesekt0c14grhh8u1) instillation guides
 &ensp;
-2) Clone this repository `git clone https://github.com/esolutionsone/component-template.git` (to the folder you want to work out of locally)
+2) Clone this repository `git clone https://github.com/esolutionsone/extension-investigation.git` (to the folder you want to work out of locally)
 
->**NOTE:** Double check you are in the correct folder before moving on to the next step. "component-template" should be the folder you are in. You can check by looking at your terminal command line to verify.
+>**NOTE:** Double check you are in the correct folder before moving on to the next step. "extension-investigation" should be the folder you are in. You can check by looking at your terminal command line to verify.
 
 3) Run `npm install` in your terminal
 
@@ -40,7 +40,7 @@ It contains a few boiler plate REST examples, a loading spinner, and a file scru
 >**NOTE:** For a developer instance, this will likely be a string of numbers! If you're using an organizational instance, it will most likely be a shorthand for your company (for example, ours is esg). 
 
 If you can't find your copmany code, you can try to deploy the component and an error should show the company code. Here's an example of the error when deploying to the wrong Personal Developer Instance:
-><span style="color:red"> ERROR in Component tag name "x-853443-testing-project" must start with the vendor prefix "x-71146-"</span>
+><span style="color:red"> ERROR in Component tag name "x-71146-testing-project" must start with the vendor prefix "x-71146-"</span>
 
 In this case, 71146 would be the code you enter for scope name!
 

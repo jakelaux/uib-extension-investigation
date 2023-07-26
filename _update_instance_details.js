@@ -5,23 +5,23 @@ const os = require('os');
 
 
 // Specify the root directory and the old_scope_name you want to match
-const scope_name = '853443'; // old_scope_name from our original working file
-const component_name = 'component-template';
+const scope_name = '71146'; // old_scope_name from our original working file
+const component_name = 'extension-investigation';
 
 // Files & Directories to scrub/replace
 const files = [
 	'./now-ui.json',
 	'./src/index.js',
-	'./src/x-853443-component-template/index.js',
-	'./src/x-853443-component-template/__tests__/test.x-853443-component-template.js',
+	'./src/x-71146-extension-investigation/index.js',
+	'./src/x-71146-extension-investigation/__tests__/test.x-71146-extension-investigation.js',
 	'./README.md',
 	'./example/element.js',
 	'./package.json',
 	'./package-lock.json'
 ];
 const dirsAndFiles = [
-	'./src/x-853443-component-template/__tests__/test.x-853443-component-template.js',
-    './src/x-853443-component-template'
+	'./src/x-71146-extension-investigation/__tests__/test.x-71146-extension-investigation.js',
+    './src/x-71146-extension-investigation'
 ];
 
 // Utility Functions
@@ -95,7 +95,7 @@ function updateNowUIComponentScope(filepath, updateScopeName) {
 if (require.main === module) {
     prGreen(`\nCurrent appcreator company code: x-${scope_name}-`);
     prLightPurple(`\nThis can be found by navigating to "sys_properties.list" in the filter navigator of your ServiceNow instance and searching for the property named "glide.appcreator.company.code".`);
-    prLightPurple(`\nFor a developer instance, this will likely be a string of numbers! If you're using an organizational instance, it will most likely be a shorthand for your company (for example, ours is esg).\n\nIf you can't find your company code, you can try to deploy the component and an error should show the company code.\nFor example, here's an example of the error when deploying to the wrong Personal Developer Instance\n"ERROR in Component tag name "x-<scopename>-component-template" must start with the vendor prefix "x-853443-"\nIn this case, 853443 would be the code you enter for scope name!\n`);
+    prLightPurple(`\nFor a developer instance, this will likely be a string of numbers! If you're using an organizational instance, it will most likely be a shorthand for your company (for example, ours is esg).\n\nIf you can't find your company code, you can try to deploy the component and an error should show the company code.\nFor example, here's an example of the error when deploying to the wrong Personal Developer Instance\n"ERROR in Component tag name "x-<scopename>-extension-investigation" must start with the vendor prefix "x-71146-"\nIn this case, 71146 would be the code you enter for scope name!\n`);
 
     let inputValid = false;
     let new_scope_name = '';
@@ -112,7 +112,7 @@ if (require.main === module) {
     if (change_component_name.toLowerCase() === 'y' || change_component_name.toLowerCase() === 'yes') {
         while (!newComponentNameValid) {
             let newComponentNameOk = '';
-            new_component_name = readlineSync.question('Please enter your new component name (it is the text after your appcreator company code in the directory within src \nex. x-853443-component-template >> component-template is the component name): ');
+            new_component_name = readlineSync.question('Please enter your new component name (it is the text after your appcreator company code in the directory within src \nex. x-71146-extension-investigation >> extension-investigation is the component name): ');
             newComponentNameValid = validateInput(new_component_name, 'component name');
             if (newComponentNameValid) {
                 component_scope_name = cleanupComponentName(new_scope_name, new_component_name);

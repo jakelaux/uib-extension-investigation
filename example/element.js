@@ -1,8 +1,8 @@
-import '../src/x-853443-component-template';
+import '../src/x-71146-extension-investigation';
 
 const el = document.createElement('DIV');
 document.body.appendChild(el);
 
 el.innerHTML = `		
-<x-853443-component-template></x-853443-component-template>
+<x-71146-extension-investigation></x-71146-extension-investigation>
 `;
