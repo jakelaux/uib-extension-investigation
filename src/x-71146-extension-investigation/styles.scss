@@ -3,6 +3,10 @@
 /* import styles for the LoadingIcon Component*/
 @import './components/LoadingIcon/LoadingIcon.scss';
 
+/* Import Pico */
+//@import "/@picocss/pico/css/pico.min.css";
+@import "../../node_modules/@picocss/pico/scss/pico.scss";
+
 .user-greeting {
     margin-left: 2rem;
 }

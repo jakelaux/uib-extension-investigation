@@ -29,6 +29,10 @@ const view = (state, { updateState, dispatch }) => {
 				"OPTION2": 	<h3 className='options-example'>Render OPTION2</h3>
 			}[method]
 		}
+		<form>
+			<input type="text" placeholder="test"></input>
+			<input type="date"></input>
+		</form>
 		</div>
 	);
 };

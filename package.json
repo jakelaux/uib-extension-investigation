@@ -15,6 +15,7 @@
 	},
 	"module": "src/index.js",
 	"dependencies": {
+		"@picocss/pico": "^1.5.10",
 		"@servicenow/cli-archetype": "22.0.0",
 		"@servicenow/cli-component-archetype": "22.0.0",
 		"@servicenow/library-translate": "quebec",

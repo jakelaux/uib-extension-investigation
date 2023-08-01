@@ -5,6 +5,12 @@ const { COMPONENT_BOOTSTRAPPED } = actionTypes;
 
 export default {
     [COMPONENT_BOOTSTRAPPED]: ({ dispatch }) => {
+        let pico = document.createElement('link');
+        pico.rel  = "stylesheet";
+        pico.href = "../../node_modules/@picocss/pico/scss/pico.scss";
+        pico.href = "https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css";
+        document.head.appendChild(pico);
+
         dispatch('GET_USER', {
             tableName: "sys_user",
             sysparm_limit: 1,
